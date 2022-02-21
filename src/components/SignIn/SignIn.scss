@@ -1,0 +1,24 @@
+.padding-input-box .p-inputtext {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 50%;
+}
+
+.padding-input-box {
+  padding: 15px 0;
+}
+
+.signup-button {
+  background-color: #e60022;
+  height: 30px;
+  margin-top: 10px;
+  color: #fff;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.signin-container {
+  display: flex;
+  padding: 0 5vw;
+}

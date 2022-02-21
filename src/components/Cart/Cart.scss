@@ -1,0 +1,138 @@
+$mobile: 500px;
+$tablet: 900px;
+
+#cart_content {
+  padding: 0;
+}
+
+#cart {
+  width: 30vw;
+  height: 90vh;
+  max-height: 100%;
+  @media screen and (max-width: $tablet) and (min-width: $mobile) {
+    width: 100vw;
+    height: 100vh;
+  }
+  @media screen and (max-width: $mobile) {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.header-cart {
+  display: none;
+  @media screen and (max-width: $tablet) and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.main-cart-container {
+  position: relative;
+  background-color: #ccc;
+  height: 90vh;
+  @media screen and (max-width: $tablet) and (min-width: $mobile) {
+    height: calc(100vh - 110px);
+  }
+  @media screen and (max-width: $mobile) {
+    height: calc(100vh - 110px);
+  }
+}
+
+.cart-header-container {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  height: 50px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 5%;
+  @media screen and (max-width: $tablet) and (min-width: $mobile) {
+    display: none;
+  }
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.cart-banner {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #fff;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.cart-item-details {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.cart-cheaper-text {
+  background-color: #fff;
+  display: flex;
+  margin: 0 5%;
+  height: 30px;
+  font-size: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cart-fix-button-container {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font-size: 10px;
+  width: 100%;
+  padding: 10px 5%;
+}
+
+.cart-button {
+  background-color: #e60022;
+  height: 30px;
+  margin-top: 10px;
+  color: #fff;
+  width: 100%;
+}
+
+.cart-tab-view {
+  background-color: #fff;
+  margin: 10px 0;
+  height: 30px;
+  display: none;
+  @media screen and (max-width: $tablet) and (min-width: $mobile) {
+    display: block;
+  }
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+}
+
+.cart-header-no-item {
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  height: 50px;
+  color: #fff;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.cart-no-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+  font-size: 12px;
+}
